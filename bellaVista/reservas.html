@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Hotel Bella Vista</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reservas y Formas de Pago</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="http://localhost/PROYECTO1/bellaVista/php/reservar.php">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulario-reserva">
+            <h2>Realiza tu Reserva</h2>
+            <form action="php/reservar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="fecha-llegada">Fecha de Llegada:</label>
+                <input type="date" id="fecha-llegada" name="fecha-llegada" required>
+
+                <label for="fecha-salida">Fecha de Salida:</label>
+                <input type="date" id="fecha-salida" name="fecha-salida" required>
+
+                <label for="personas">Número de Personas:</label>
+                <input type="number" id="personas" name="personas" min="1" required>
+
+                <label for="habitacion">Preferencias de Habitación:</label>
+                <input type="text" id="habitacion" name="habitacion">
+
+                <button type="submit" class="btn">Reservar</button>
+            </form>
+        </section>
+
+        <section id="formas-pago">
+            <h2>Formas de Pago</h2>
+            <ul>
+                <li><strong>Transferencia Bancaria:</strong> Realiza tu pago directamente a nuestra cuenta bancaria y envíanos el comprobante.</li>
+                <li><strong>Pagos en Línea:</strong> Aceptamos pagos mediante tarjetas de crédito y débito.</li>
+                <li><strong>Pagos al Llegar:</strong> Puedes pagar directamente en el hotel al momento de tu llegada.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hotel Bella Vista. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

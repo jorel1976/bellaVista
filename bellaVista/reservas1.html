@@ -1,0 +1,28 @@
+<form action="reservar.php" method="POST">
+    <label for="nombre">Nombre Completo:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="email">Correo Electrónico:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="fecha_llegada">Fecha de Llegada:</label><br>
+    <input type="date" id="fecha_llegada" name="fecha_llegada" required><br><br>
+
+    <label for="fecha_salida">Fecha de Salida:</label><br>
+    <input type="date" id="fecha_salida" name="fecha_salida" required><br><br>
+
+    <label for="numero_personas">Número de Personas:</label><br>
+    <input type="number" id="numero_personas" name="numero_personas" min="1" required><br><br>
+
+    <label for="tipo_habitacion">Tipo de Habitación:</label><br>
+    <select id="tipo_habitacion" name="tipo_habitacion" required>
+        <option value="simple">Simple</option>
+        <option value="doble">Doble</option>
+        <option value="suite">Suite</option>
+    </select><br><br>
+
+    <label for="mensaje">Mensaje (opcional):</label><br>
+    <textarea id="mensaje" name="mensaje"></textarea><br><br>
+
+    <input type="submit" value="Reservar">
+</form>
